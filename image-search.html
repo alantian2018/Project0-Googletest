@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Google Images</title>
+    <style>
+
+
+
+       #txtsearch{
+
+               padding-left:30px;
+               border-radius:25px;
+               border:1px solid #ddd;
+               width:460px;
+               height:35px;
+
+               background:white url(https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png) left no-repeat;
+
+                background-size:17px;
+                background-position:8px;
+               }
+       #txtsearch:hover{
+            border: 2.0px solid #dadadb;
+            border-radius: 25px;
+        }
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+       #GOOG{
+            left:50%;
+            top:40%;
+            position:absolute;
+            transform:translate(-50%, -60%);
+            text-align:center;
+             font-family:sans-serif;
+            font-size:80px;
+
+
+       }
+       #IMG{
+         left:58%;
+            top:47%;
+            position:absolute;
+            transform:translate(-42%, -53%);
+            text-align:center;
+
+            font-size:20px;
+
+
+       }
+
+        #search{
+            left:50%;
+            top:55%;
+            position:absolute;
+            transform:translate(-50%, -55%);
+            text-align:center;
+        }
+        .submitsearch{
+            padding:10px;
+            border:0px;
+            height:37px;
+            background-color:#f8f9fa;
+        }
+        #sub:hover{
+         border: 1.0px solid #dadadb;
+         border-radius:5px;
+        }
+        #searchbutton{
+            color:black;
+            float:right;
+            padding-top:10px;
+            padding-right:20px;
+            text-decoration: none;
+        }
+        #searchbutton:hover{
+        text-decoration:underline;
+        }
+        #sub{
+        width:20px;
+        height:20px;
+        background: url(data:image/png;base64,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) no-repeat;
+
+
+        position: relative;
+        right:40px;
+        top:3px;
+
+        background-size:15px;
+        background-position:center;
+        border:none;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+</body>
+<div id="GOOG">
+    <span  style="color:blue">G</span><span  style="color:red">o</span><span  style="color:#f5bd1f">o</span><span  style="color:blue">g</span><span  style="color:green">l</span><span  style="color:red">e</span>
+</div>
+<div id="IMG">
+    <span style="color:blue; font-style:sans-serif;">Images</span>
+</div>
+<div id = "search">
+        <form action="http://images.google.com/images" >
+            <input id="txtsearch" type="text" name="q" class="box">
+            <button id="sub" type="submit"></button>
+
+        </form>
+
+    </div>
+    <a id="searchbutton"  href="google-search.html">Search</a>
+
+</body>
+</html>
